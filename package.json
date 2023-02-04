@@ -48,8 +48,9 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/tarek339/onlineshop-frontend.git"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {}
 }

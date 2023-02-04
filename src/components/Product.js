@@ -53,7 +53,8 @@ export default function Item({id, name, description, image, quantity, price }) {
           </Typography>
         </CardContent>
         <CardActions>
-          <button className='cart-button'
+          {quantity > 0 ?
+            <button className='cart-button'
             onClick={async () => {
             const res = await axios.post("/cart/item", {
               productId: id
@@ -62,7 +63,7 @@ export default function Item({id, name, description, image, quantity, price }) {
             dispatch((setCart(res.data)))
           }
           }><AddShoppingCartOutlinedIcon fontSize='medium'/>
-          </button>
+          </button>:<Typography>ausverkauft</Typography>}
         </CardActions>
       </Card>
     </div>
