@@ -1,0 +1,199 @@
+$button-color: #ea640c
+
+body 
+    margin: 0
+    font-family: sans-serif
+
+.navbar 
+    padding: 1em
+
+.description-container 
+    height: 50px
+
+.name-container 
+    height: 75px
+
+.icons 
+    cursor: pointer
+
+.card 
+    max-width: 250px
+    margin: 0 auto
+
+.cart-button 
+    cursor: pointer
+    background-color: #fff
+    border: 0px
+    color: $button-color
+
+.head 
+    background-color: #f2f2f2
+    text-align: center
+    margin-bottom: 20px
+    padding: 0.5em
+
+.TextField-without-border-radius fieldset 
+    border-radius: 0
+
+// Produktlisting Komponente
+
+.listing-container 
+    max-width: 1400px
+    margin: 0 auto
+    padding: 0em 1em 0em 1em
+
+
+input::-webkit-search-cancel-button
+    cursor: pointer
+    font-size: 20px
+
+
+.search-bar 
+    max-width: 250px
+    margin-bottom: 3em
+
+input[type="search"] 
+    width: 250px
+    height: 35px
+    border: 1px solid #e0e0e0
+    border-radius: 3px
+    padding-left: 5px
+    margin-top: 4px
+
+input[type]:focus 
+    outline: none
+    border-color: #bcbcbc
+
+@media screen and (min-width: 1024px) 
+
+    input[type]:hover 
+        outline: none
+        border-color: #bcbcbc
+    
+@media screen and (max-width:768px) 
+    .search-bar 
+        margin: 0 auto
+        margin-top: 3em
+        margin-bottom: 3em
+    
+.load-more-div 
+    display: grid
+    justify-content: center
+    margin: 1em
+
+.load-more-button 
+    background-color: white
+    color: $button-color
+    border: 0px
+    cursor: pointer
+
+.not-found 
+    text-align: center
+    animation: cssAnimation 0s 0.5s forwards
+    visibility: hidden
+
+    @keyframes cssAnimation 
+        to 
+            visibility: visible
+
+// SingIn SignUp Komponente
+
+.form 
+    max-width: 400px
+    margin: 0 auto
+    padding: 0px 15px 20px 15px
+
+.sign-button 
+    background-color: #fff
+    border: 1px solid $button-color
+    border-radius: 3px
+    color: $button-color
+    height: 35px
+    font-size: 20px
+    cursor: pointer
+    margin-top: 20px
+    transition: 0.5s
+
+@media screen and (min-width: 1024px) 
+
+    .sign-button:hover 
+        background-color: $button-color
+        color: #fff
+        border: 1px solid $button-color
+        transition: 0.5s
+    
+.button 
+    border: none
+    background-color: #f2f2f2
+    font-size: 26px
+    color: $button-color
+    cursor: pointer
+
+.forgot-password 
+    text-align: right
+    text-decoration: underline
+    cursor: pointer
+
+// Ordered products Komponente
+
+.section-container 
+    padding: 15px 15px 20px 15px
+    display: grid 
+    justify-content: center
+
+// Cart Komponente
+
+.cart-container 
+    max-width: 1000px
+    margin: 0 auto
+
+.total-container 
+    padding: 20px 15px 20px 15px
+    display: grid 
+    justify-content: center
+
+.button-container 
+    display: grid
+    grid-template-columns: 0fr
+    grid-row-gap: 15px
+    margin-top: 15px
+
+.carts-button 
+    background-color: $button-color
+    border: 1px solid $button-color
+    border-radius: 3px
+    color: white
+    height: 30px
+    font-size: 18px
+    cursor: pointer
+    transition: 0.5s
+
+@media screen and (min-width: 1024px) 
+
+    .carts-button:hover 
+        background-color: white
+        color: $button-color
+        border: 1px solid $button-color
+        transition: 0.5s
+    
+// Edit Komponente
+
+.edit-button 
+    width: 130px
+    background-color: #fff
+    border: 1px solid $button-color
+    border-radius: 5px
+    color: $button-color
+    height: 30px
+    font-size: 18px
+    cursor: pointer
+    line-height: 1.6
+    transition: 0.5s
+
+@media screen and (min-width: 1024px) 
+
+    .edit-button:hover 
+        background-color: $button-color
+        color: #fff
+        border: 1px solid $button-color
+        transition: 0.5s

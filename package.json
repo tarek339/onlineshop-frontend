@@ -17,6 +17,7 @@
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.8.0",
     "react-scripts": "5.0.1",
+    "sass": "^1.58.0",
     "styled-components": "^5.3.6",
     "web-vitals": "^2.1.4"
   },
@@ -48,9 +49,11 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/tarek339/onlineshop-frontend.git"
+    "url": "git+https://github.com/tarek339/onlineshop-frontend.git"
   },
   "author": "",
   "license": "ISC",
-  "devDependencies": {}
+  "bugs": {
+    "url": "https://github.com/tarek339/onlineshop-frontend/issues"
+  }
 }

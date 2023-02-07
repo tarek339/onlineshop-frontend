@@ -63,7 +63,7 @@ export default function Item({id, name, description, image, quantity, price }) {
             dispatch((setCart(res.data)))
           }
           }><AddShoppingCartOutlinedIcon fontSize='medium'/>
-          </button>:<Typography>ausverkauft</Typography>}
+          </button>:<Typography>VERKAUFT</Typography>}
         </CardActions>
       </Card>
     </div>

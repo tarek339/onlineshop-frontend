@@ -62,9 +62,9 @@ export default function Home() {
       </div>
       
       {products.length === 0 ? 
-        <div className='not-found'>
-          <Typography variant='h4'>No products found...</Typography>
-        </div>
+      <div className='not-found'>
+        <Typography variant='h4'>No products found...</Typography>
+      </div>
        :
       <Grid container justifyContent="center" spacing={{ md:3 }}>
       {products.slice(0,loadItems).map((value) => {
